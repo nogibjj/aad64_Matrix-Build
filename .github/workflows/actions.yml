@@ -1,4 +1,4 @@
-name: Install
+name: CI
 on:
   push:
     branches: [ "main" ]
@@ -21,3 +21,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: install packages
         run: make install
+      - name: format
+        run: make format
+      - name: lint
+        run: make lint
+      - name: test
+        run: make test
