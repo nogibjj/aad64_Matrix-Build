@@ -1,7 +1,6 @@
 from main import (average, 
                   med, 
                   standard_deviation, 
-                  summary_stats,
                   visualize_data)
 import pandas as pd
 
