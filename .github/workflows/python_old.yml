@@ -1,4 +1,4 @@
-name: Python 3.8, 3.9, 3.11 
+name: Python 3.7
 on:
   push:
     branches: [ "main" ]
@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        python-version: [3.8, 3.9, 3.11]
+        python-version: [3.7]
         os: [ubuntu-latest]
     runs-on: ${{matrix.os}}
     steps:
